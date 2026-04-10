@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact</title>
+    <link rel="stylesheet" href="NavBar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Reddit+Mono:wght@200..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="Cover">
+            <nav class="MainNav">
+            <div class="Logo">
+                <img src="Image-Logo/MainLogo.png" width="70px" height="70px">
+                <h5> NEXUS CLINIC HOSPITAL</h5>
+            </div>
+            <div class="Content">
+                <ul>
+                    <li class="Select-Container">
+                        <Select id='services'>
+                            <div class="Dropdown">
+                            <option selected disabled hidden>Services</option>
+                            <option  value="Freeconsultation.html">Free Consultation</option>
+                            <option  value="Pediatric.html">Pediatric Consultation</option>
+                            <option  value="AdultCheck.html">Adult Health Check-up</option>
+                        </div>
+                        </Select>
+                    </li>
+                    <a href="Consultation.html"><li>How to Consult</li></a>
+                    <li class="Select-Container2">
+                        <select id='servicess'>
+                            <option selected disabled hidden>Medical Partner</option>
+                            <option  value="DoctorForm.html">Be a Partner-Doctor</option>
+                            <option  value="DoctorForm.html">Join Partner-Nurses</option>
+                            <option  value="Patient.html">Sign Up as Patient</option>
+                             <option  value="StaffsForm.html">Apply as Staff</option>
+                        </select>
+                    </li>
+                    <a href="Contact.html"><li >Contact Us</li></a>
+                    <a href="AboutUs.html"><li>About Us</li></a>
+                    <a href="More.html"><li>More</li></a>
+
+                </ul>
+            </div>
+
+           <script>
+                    document.getElementById("services").addEventListener("change", function() {window.location.href = this.value;});
+                    document.getElementById("servicess").addEventListener("change", function() {window.location.href = this.value;});
+            </script>
+
+            <div class="MiniLogi">
+                <ul>
+                    <a href="index.html"><i class="fa-brands fa-airbnb"></i></a>
+                    <a href="https://www.instagram.com/aldenrichards02/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="ReadMe.html"><i class="fa-regular fa-heart"></i></a>
+                    <a href="MainLog.html"><i class="fa-regular fa-circle-user"></i></a>
+                   
+                </ul>
+            </div>
+        </nav>
+
+        <div class="Information">
+           <div class="Info_Title">
+                <p style="color:white;">──── Contact Us</p>
+                <h1>Keep Connected With Our <br>Nexus Hospital Organization</h1>
+           </div>
+        </div>
+        
+    </div>
+
+    <div class="Icons_Info">
+ 
+            <div class="Info_Concept">
+                <p>──── Contact Information</p>
+                <h1>Get In Touch With Our Contact <br> Information</h1>
+      
+
+        </div>
+
+        <div class="All_Info">
+
+
+            <div class="Infos">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <h4>Head Office</h4>
+                    <p>CLARK COLLEGE OF SCIENCE AND TECHNOLOGY</p>
+            </div>
+            
+            <div class="Infos">
+                <i class="fa-solid fa-inbox"></i>
+                <h4>Contact Number</h4>
+                <p>jvcnexushospital@gmail.com</p>
+            </div>
+
+            <div class="Infos">
+                <i class="fa-solid fa-tty"></i>
+                <h4>Telephone</h4>
+                <p>111 - 222 - 333</p>
+            </div>
+
+            <div class="Infos">
+                <i class="fa-regular fa-clock"></i>
+                <h4>Office Hours</h4>
+                <p>24/7 OPEN</p>
+            </div>
+        </div>
+      
+    </div>
+
+    <div class="Main_Container">
+
+        <div class="Left">
+            <img src="Image-Logo/34.png" class="ImageFont">
+        </div>
+
+
+            <div class="Form_Contact">
+
+            <div class="Title_Form">
+                <h1 style="margin-bottom: 0;">Use the Form Below To<br>
+                    Send Us A Message 
+                    Directly
+                </h1>
+            </div>
+
+            <div class="Title_Form">
+                    <p>Message us about your concerns. Your message may help us improve our services, 
+                    assist patients better, and provide the care you deserve.</p>
+            </div>
+
+            <div class="ParentForm">
+                <form action="Get" class="Message">
+                    
+                    <div class="Column">
+                        <label>First Name</label>
+                        <label>Last Name</label>
+                        <Input type="text" placeholder="First Name" required>
+                        <input type="text" placeholder="Last Name" required>
+                    
+                        <label>Email </label>
+                        <label>Subject </label>
+                        <input type="email" placeholder="Email" required>
+                        <input type="text" placeholder="Subject" required>
+                    </div>
+                
+                        
+
+                    <div class="Concern">
+                        <label>Concern:</label><br>
+                        <textarea name="" id="" placeholder="Please Enter Your Concern"></textarea>
+                    </div>
+            
+                
+                    <div class="Butoon">
+                        <a><button class="Send" type="submit">SEND MESSAGE</button></a>
+                    </div>
+                
+                </form>
+            </div>
+        </div>
+    </div>
+     
+    <div class="FooterMain">
+         <footer>
+            <h1>JOIN OUR NEXUS FAMILY AND STAY HEALTHY  </h1>
+            <p>Stay on track with daily check-ups, proper medication intake, and scheduled appointments</p>
+
+            <div class="sign-up">
+                <input type="text" placeholder="Enter your email address">
+                 <a href="Consultation.html"><button>SIGN ME UP!</button></a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

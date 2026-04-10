@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Doctors</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Reddit+Mono:wght@200..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <label>
+        <input type="checkbox">
+        <div class="toggle">
+            <span class="top-line common" ></span>
+            <span class="middle-line common" ></span>
+            <span class="bottom-line common" ></span>
+        </div>
+        <div class="slide">
+            <h2>MENU</h2>
+            <ul>
+                <li> <a href="Home2.html" class="Slide_Ul"><i class="fa-solid fa-tachograph-digital"></i> Dashboard</a></li>
+                <li><a href="Appointment_Pat.html" class="Slide_Ul"><i class="fa-regular fa-calendar-days"></i> Appointment</a></li>
+                <li><a href="Prescription.html" class="Slide_Ul"><i class="fa-solid fa-file-prescription"></i> Prescription</a></li>
+                <li><a href="Patient_Doctors.html" class="Slide_Ul"><i class="fa-solid fa-users-gear"></i> Doctors</a></li>
+                <li><a href="Patient_Report.html" class="Slide_Ul"><i class="fa-regular fa-clipboard"></i> Reports</a></li>
+          
+            </ul>
+            <ul>
+                 <li><a href="index.html" class="Log-out"><i class="fa-solid fa-arrow-right-from-bracket"></i> Log-out</a></li>
+            </ul>
+        </div>
+    </label>
+    <div class="Content_Outside">
+            <div class="Side_Image">
+                <img>
+            </div>
+        <div class="Upper">
+           <div class="PerscriptionBox">
+                <h2 style="margin: 20px; padding-left: 10px; text-align: center;">Assigned Doctors For Medication</h2>
+
+                <div class="Note_Ins">
+                    <h1> Doctor Assignment and Prescription Guidance</h1>
+                    <p style="text-align: justify; margin-top: 10px;">The patient is currently under the care of Dr. Ace Subz, a physician specializing in general medicine. Dr. Subz provides personalized care, reviewing medical history and symptoms before prescribing treatment. He emphasizes following prescriptions carefully, including correct dosage, timing, and completing the full course, along with any precautions such as taking medication with food or avoiding certain activities.</p>
+                    <p style="text-align: justify; margin-top: 20px;">
+                        He advises patients not to share medications and to report any worsening symptoms. Regular follow-ups allow Dr. Quinzon to monitor progress, adjust treatment, and ensure a safe, effective recovery.
+                    </p>
+                </div>
+
+
+                  <div class="IDName">
+                        <div class="RightSide_Name">
+                            <label style="margin: 20px;"><span class="fontweig">Doctor:</span> Dr. Ace Subz, MD</label><br>
+                            <label style="margin: 20px;"><span class="fontweig">Specialization:</span> General Medicine</label><br>
+                            <label style="margin: 20px;"><span class="fontweig">Contact:</span> +63 912 345 6789</label><br>
+                            <label style="margin: 20px;"><span class="fontweig">Department:</span> Outpatient Clinic, Room 204</label><br>
+                             <label style="margin: 20px;"><span class="fontweig">Affiliated Hospital:</span> JVS Nexus Clinic</label><br>
+                            <label style="margin: 20px;"><span class="fontweig">Years of Experience:</span> 6 years</label><br>
+        
+                            <label style="margin: 20px;"><b>Assigned Date Issued:</b> 04-Apr-2026</label><br>
+                        </div>
+                        <img src="Image-Logo/DocProfM.png" style="width: 220px; height: 220px;  margin-top: -24px;">
+                   </div>
+                   
+                <form id="collegeForm" method="get" class="Form_Container">
+                 
+
+                    <table class="Prescription">
+                            <tr>
+    
+                                <td style="text-align: center;"><span class="fontweig">Specialization</span></td>
+                                <td>Internal Medicine</td>
+                                <td>Infectious Diseases Management</td>
+                           
+                            </tr>
+                            <tr>
+                               <td style="text-align: center;"><span class="fontweig">Years of Experience</span></td>
+                                <td>6 years</td>
+                                <td>3 years in hospital-based patient care</td>
+                              
+                              
+                            </tr>
+                            <tr>
+                                 <td style="text-align: center;"><span class="fontweig">Education</span></td>
+                                <td>MD – FEU Institute of Medicine</td>
+                                <td>Bachelor of Science in Medical Technology – University of the East</td>
+                              
+                                
+                            </tr>
+                            <tr>
+                               <td style="text-align: center;"><span class="fontweig">Achievements</span></td>
+                                <td>Published research on infectious diseases</td>
+                                <td>Awarded “Outstanding Resident Physician” during residency training</td>
+                             
+                                
+                            </tr>
+                           
+                               <tr>
+                              <td style="text-align: center;"><span class="fontweig">Work History</span></td>
+                                <td>Manila Doctors Hospital</td>
+                                <td>Former Junior Resident – Quezon City General Hospital</td>
+                            
+                                
+                            </tr>
+                    </table>
+                </form>
+                
+
+           </div>
+        </div>
+    </div>
+    <script >
+           
+        window.onload = function() {
+            const savedText = localStorage.getItem("userMessage");
+            if (savedText) {
+                document.getElementById("myText").value = savedText;
+            }
+        };
+
+        
+        function saveText() {
+            const text = document.getElementById("myText").value;
+            localStorage.setItem("userMessage", text);
+            alert("TEXT SAVED!");
+        }
+        
+
+        let username = localStorage.getItem("username");
+
+            if (username == "Admin") {
+                document.getElementById('AccountName').innerHTML = 
+                    `Doc.  ${username}`;
+            }
+
+            else if (username == "Batman") {
+                document.getElementById('AccountName').innerHTML = 
+                    `<i class="fa-solid fa-user-injured"></i>  ${username}`;
+            }
+    </script>
+</body>
+</html>

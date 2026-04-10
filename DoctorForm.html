@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Doctors Application</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Form.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Reddit+Mono:wght@200..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+     
+<body>
+    <div class="Informations">
+        <h1>MEDICAL APPLICATION</h1>
+         <p>Kindly fill out this form with the required information to apply. 
+            The details you provide will serve as the basis for scheduling your interview applications
+            and job consultation</p>
+        <p><b><i>Note:</b></i> The form will only be a basis for accepting resume or applicants form. Face-to-face interview will be the final basis. If you wish to create website account:
+            <a href="Doctor.html" style="text-decoration: none; color: green;">Open New Account</a>
+        </p>
+        
+    </div>
+
+    <div class="form-container">
+        <div id="enrollment-form">
+            <h1>MEDICAL PROFESSIONAL FORM</h1>
+            
+            <form id="collegeForm" action="" method="get">
+                
+                <table>
+                    <div>
+                        
+                    <tr>
+                        <td title="First Name"><label for="fname">First-Name:</label></td>
+                        <td colspan="3"><input type="text" name="fname" id="fname" placeholder="First Name" required></td>
+                    </tr>
+                    <tr>
+                        <td title="Last Name"><label for="lname">Last-Name:</label></td>
+                        <td colspan="3"><input type="text" name="lname" id="lname" placeholder="Last Name" required></td>
+                    </tr>       
+                     <tr>
+                        <td valign="top" title="Credentials"><label for="credentials">Please Specify:</label></td>
+                        <td colspan="3">
+                            <div class="checkbox-group">
+                                <div><input type="checkbox" id="c1"><label for="c1">Anesthesiologist</label></div>
+                                <div><input type="checkbox" id="c2"><label for="c2">Pediatrician</label></div>
+                                <div><input type="checkbox" id="c3"><label for="c3">Radio-logist</label></div>
+                                <div><input type="checkbox" id="c4"><label for="c4">Urologist</label></div>
+                                <div><input type="checkbox" id="c5"><label for="c5">Urogynecologist</label></div>
+                                <div><input type="checkbox" id="c6"><label for="c6">Others</label></div>                                
+                            </div>
+                        </td>
+                    </tr>         
+                    <tr>
+                        <td title="Application-date"><label for="Adate">Application Date:</label></td>
+                        <td colspan="3"><input type="date" name="Adate" id="Adate" required></td>
+                    </tr>
+                    <tr>
+                        <td title="Age"><label for="age">Age:</label></td>
+                        <td><input type="text" name="age" id="age" required></td>
+                        
+                        <td title="Nationality"><label for="nationality">Nationality:</label></td>
+                        <td><input type="text" name="nationality" id="nationality" required></td>
+                    </tr>  
+                           
+                    <tr>
+                        <td title="Year Level"><label for="year">Please Specify:</label></td>
+                        <td colspan="3">
+                            <select name="year" id="year" required>
+                                <option selected disabled hidden> Preferred Type Of Experience</option>
+                                <option value="1">General</option>
+                                <option value="2">Incontinence</option>
+                                <option value="3">Pediatric</option>
+                                <option value="4">Reconstruction</option>
+                                  <option value="5">Others.</option>
+                            </select>
+                        </td>
+
+                    </tr>
+                    
+                    <tr>
+                        <td title="PhoneNumber"><label for="Pnumber">Phone Number: </label></td>
+                        <td colspan="3"><input type="text" name="Pnumber" id="Pnumber" placeholder="xxx-xxxx-xxx" required></td>
+                    </tr>
+                    <tr>
+                        <td title="PhoneNumber"><label for="PhoneNumber">Telephone:</label></td>
+                        <td colspan="3"><input type="text" name="Pnumber" id="Pnumber" placeholder="xxx-xxxx-xxx" required></td>
+                    </tr>
+    
+                    <tr>
+                        <td title="Sex"><label for="sex">Sex:</label></td>
+                        <td>
+                            <div class="radio-group">
+                                <input type="radio" name="sex" id="male" value="male" required> <label for="male" style="display:inline; font-weight:normal; margin-top: 10px; ">Male</label>
+                                <input type="radio" name="sex" id="female" value="female" required> <label for="female" style="display:inline; font-weight:normal; margin-top: 10px;">Female</label>
+                            </div>
+                        </td>
+                        <td title="Civil Status"><label for="status">Civil-Status:</label></td>
+                        <td>
+                            <select name="status" id="status" required>
+                                <option value="single">Single</option>
+                                <option value="married">Married</option>
+                                <option value="private">Widowed</option>
+                                 <option value="Divorce">Divorce</option>
+                            </select>
+                        </td>
+                    </tr>
+
+                    
+                    <tr>
+                        <td title="Region"><label for="region">City:</label></td>
+                        <td><input type="text" name="region" id="region" required></td>
+                        
+                        <td title="Province"><label for="province">Province:</label></td>
+                        <td><input type="text" name="province" id="province" required></td>
+                    </tr>
+                    <tr>
+                        <td title="City"><label for="city">Barangay:</label></td>
+                        <td><input type="text" name="city" id="city" required></td>
+                        
+                        <td title="Barangay"><label for="barangay">Region:</label></td>
+                        <td><input type="text" name="barangay" id="barangay" required></td>
+                    </tr>
+                    <tr>
+                        <td title="House No."><label for="address">House No. / Street:</label></td>
+                        <td colspan="3"><input type="text" name="address" id="address" required></td>
+                    </tr>                                       
+                    </div>
+                </table>
+                <table>
+            <div>
+                <h2 style="text-align: center; color:#0a5700">PROFESSIONAL INFORMATION</h2>
+            </div>
+            <tr>
+                        <td title="Current-Position"><label for="Current-Position">Current-Position:</label></td>
+                        <td colspan="3"><input type="text" name="Cposition" id="fname" placeholder="" required></td>
+                    </tr>
+                    <tr>
+                        <td title="Medical-School-Graduation"><label for="Medical-School-Graduation">Medical-School-Graduation:</label></td>
+                        <td colspan="3"><input type="text" name="MSG" id="fname" placeholder="" required></td>
+                    </tr>
+                    <tr>
+                        <td title="ResidencyProgram"><label for="ResidencyProgram">Residency Program:</label></td>
+                        <td colspan="3"><input type="text" name="RP" id="fname" placeholder="" required></td>
+                    </tr>
+                    <tr>
+                        <td title="ProgramDirector"><label for="ProgramDirector">Program Director:</label></td>
+                        <td colspan="3"><input type="text" name="PD" id="fname" placeholder="" required></td>
+                    </tr>
+            <tr>
+                        <td valign="top" title="Credentials"><label for="credentials">Please Specify:</label></td>
+                        <td colspan="3">
+                            <div class="checkbox-group">
+                                <div><input type="checkbox" id="c1"><label for="c1">Board Certified<span style="color: white;">..........................................</span></label></div>
+                                <div><input type="checkbox" id="c2"><label for="c2">Board Eligible</label></div>                   
+                            </div>
+                        </td>
+                    </tr>   
+                    <tr>
+                        <td title="Current-Medical-License"><label for="Current-Medical-License">Current-Medical-License:</label></td>
+                        <td colspan="3"><input type="text" name="CML" id="fname" placeholder="" required></td>
+                    </tr>      
+                    <tr>
+                        <td title="Date-Issued"><label for="Date-Issued">Date-Issued:</label></td>
+                        <td colspan="3"><input type="date" name="DI" id="" required></td>
+                    </tr>
+                    <tr>
+                        <td title="Year Level"><label for="year">State:</label></td>
+                        <td colspan="3">
+                            <select name="year" id="year" required>
+                                <option value="1" selected disabled hidden></option>
+                                <option value="1">CA</option>
+                                <option value="1">AL</option>
+                                <option value="1">AR</option>
+                                <option value="1">AS</option>
+                                <option value="1">AZ</option>
+                                <option value="1">CK</option>
+                                <option value="1">MA</option>
+                                <option value="1">PA</option>
+                               <option value="1">PR</option>
+                               <option value="1">PI</option>            
+        </table>
+        <table>
+            <h2 style="text-align: center; color:#0a5700">DOCUMENT CHECKLIST</h2>
+             <i><p style="text-align: center;">Please include the following items (Preferably Via Walk-In Basis or Email):</p></i>
+            <tr>
+                <td>
+                    <div class="checkbox-group" >
+                                <div><input type="checkbox" id="c1"><label for="c1" >Curriculum Vitae </label></div>
+                                <div><input type="checkbox" id="c2"><label for="c2">One page personal statement</label></div>  
+                                <div><input type="checkbox" id="c1"><label for="c1">Copy of Current Medical License </label></div>    
+                                <div><input type="checkbox" id="c1"><label for="c1">Copy of Medical School Diploma </label></div>   
+                                <div><input type="checkbox" id="c1"><label for="c1">Copy of DEA </label></div>   
+                                <div><input type="checkbox" id="c1"><label for="c1">Copy of CPR/BLS Currency </label></div> 
+                                <div><input type="checkbox" id="c1"><label for="c1">Copy of Current Board Certification </label></div>  
+                                  <div><input type="checkbox" id="c1"><label for="c1">Copy of Current Passport </label></div>  
+                                   <div><input type="checkbox" id="c1"><label for="c1">Signed JVCMed Release Form </label></div>                 
+                            </div>
+                             <br>
+                </td>
+            </tr>
+            <tr>
+               
+                        <td colspan="4" style="text-align: center; padding-top: 20px;">
+                            <div class="button-group">
+                                <input type="submit" value="Submit Form">
+                                <input type="reset" value="Clear">
+                            </div>
+                        </td>
+                    </tr>
+                   
+        </table>
+            </form>
+        </div>
+        
+
+        
+        <div id="thank-you-page" class="thank-you-page">
+            <div class="check-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h1>Your Application Form Successfully Submitted!</h1>
+            <p>Thank you, <span id="student-name" style="font-weight:bold; color:#0a5700;"></span>!</p>
+            <p>We will review your information as soon as possible. Please wait for our message or call. Thank you for choosing our hospital – A Better Health, A Better Life.
+            </p>
+            
+            <div class="button-group">
+                <button onclick="location.reload()" class="btn-print" style="background-color: #0f7e00; margin-left: 10px;">Submit Another Form</button>
+                  <a href="index.html"><button class="btn-print" style="background-color: #0f7e00; margin-left: 10px;"><i class="fa-solid fa-house-chimney"></i></button></a>
+            </div>
+        </div>
+
+    </div>
+     <script>
+        document.getElementById('collegeForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const firstName = document.getElementById('fname').value;
+            const lastName = document.getElementById('lname').value;
+            document.getElementById('enrollment-form').style.display = 'none';
+            document.getElementById('student-name').textContent = firstName + " " + lastName;
+            document.getElementById('thank-you-page').style.display = 'block';
+        });
+    </script>
+
+    
+</body>
+</html>
+

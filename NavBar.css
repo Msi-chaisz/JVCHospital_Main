@@ -1,0 +1,736 @@
+*{
+    margin: 0;
+
+    
+}
+
+h1{
+    font-family: "Reddit Mono", monospace;
+    
+}
+.Seperate h2{
+    font-family: "Reddit Mono", monospace;
+}
+.Cover{
+    margin-top: 0px;
+    border: 1px solid transparent;
+    background-size: cover;
+    animation: slideshow 20s infinite;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+@keyframes slideshow{
+    0%   { background-image: url('Image-Logo/6.png'); }
+    33%  { background-image: url('Image-Logo/7.png'); }
+    66%  { background-image: url('Image-Logo/8.png'); }
+    100% { background-image: url('Image-Logo/10.png'); }
+}
+.Covers{
+    margin-top: 0px;
+    border: 1px solid transparent;
+    background-size: cover;
+    background-image: url(Image-Logo/WHO\ building.png);
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.Covers_Adult{
+    margin-top: 0px;
+    border: 1px solid transparent;
+    background-size: cover;
+    background-image: url(Image-Logo/ADULTBG.png);
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.Covers_Ped{
+    margin-top: 0px;
+    border: 1px solid transparent;
+    background-size: cover;
+    background-image: url(Image-Logo/PEDBG.png);
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.CoverMore{
+     margin-top: 0px;
+    border: 1px solid transparent;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 128, 0, 0.3), rgba(0, 128, 0, 0.3)), url(Image-Logo/BGCOVER.png);
+    background-size: cover;
+    background-position: center;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.MainNav {
+    margin: 20px;
+    height: 75px;
+    border-radius: 50px;
+    display: flex;
+    position: sticky;
+    top: 0;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    background: rgba(255,255,255, 0.9);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+     border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.Logo {
+    width: 26%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    padding-left: 30px;
+  
+}
+.Logo img {
+    margin-top: 0;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+.Logo h5 {
+    margin-top: 30px;
+    font-style: italic;
+}
+
+
+.Content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    margin-left: 10px;
+    padding-right: 35px;
+    
+}
+
+.Content ul {
+    display: flex;
+    margin-top: 28px;
+    margin-left: 20px;
+    margin-right: 50px;
+    list-style: none;
+}
+.Content li {
+    margin-left: 12px;
+    margin-right: 12px;
+    transition: .3s ease;
+}
+
+.Content a{
+    text-decoration: none;
+    color: black;
+}
+
+.Content li:hover{
+    text-decoration: green underline;
+    color: black;
+}
+.Select-Container {
+    width: 100px;
+}
+
+.Select-Container select {
+    width: 100%;
+    border: transparent;
+    background-color: transparent;
+}
+
+.Select-Container2 {
+    width: 120px;
+}
+
+.Select-Container2 select {
+    width: 100%;
+    border: transparent;
+    background-color: transparent;
+}
+
+.Select-Container select:hover{
+  
+    color: black;
+}
+
+.Select-Container2 select:hover{
+  
+    color: black;
+}
+
+.MiniLogi{
+  
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    margin-left: 20px;
+    padding-right: 20px;
+
+}
+
+.MiniLogi ul {
+  
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    list-style: none;
+    
+}
+
+.MiniLogi i {
+    
+    margin-top: 28px;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+.MiniLogi a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.Information{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Info_Title{
+ 
+    width: 50%;
+    text-align: center;
+    color: white;
+    padding: 10px
+}
+.Info_Title p {
+    margin-bottom: 10px;
+         font-family: "Poppins", sans-serif;
+     font-weight: 300;
+     font-size: 16px;
+}
+.Icons_Info{
+ 
+    width: 100%;
+    height: 500px;
+  
+}
+.Info_Concept{
+    margin-top: 70px;
+    text-align: center;
+    color: black;
+    padding: 10px
+}
+
+.All_Info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 60px 20px;
+    flex-wrap: wrap;
+    
+}
+
+
+.Infos {
+    background: white;
+    border-radius: 50px;
+    width: 260px;
+    height: 180px;
+    text-align: center;
+    padding: 25px 20px;
+    transition: all 0.3s ease;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;    
+    border: 2px solid green;
+   
+}
+
+
+.Infos:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+
+.Infos i {
+    font-size: 26px;
+    margin-bottom: 15px;
+    color: #000;
+    background: whitesmoke;
+    padding: 12px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+
+.Infos h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+
+.Infos p {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.4;
+}
+
+.Infos h4, .Infos p, .Infos i {
+    margin-top: 10px;
+    
+}
+.Infos h4{
+    font-family: "Poppins", sans-serif;
+}
+.Infos p{
+         font-family: "Poppins", sans-serif;
+     font-weight: 300;
+     font-size: 16px;
+}
+.Infos i{
+    font-size: 25px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+.Form_Contact{
+    width: 100%;
+   
+    height: 750px;
+    padding-top: 50px
+}
+.Title_Form {
+
+    display: flex;
+    justify-content: end;
+    align-items: flex-start;
+}
+.Title_Form h1{
+    font-family: 20px;
+}
+.Title_Form h1, .Title_Form p {
+  
+    width: 600px;
+    height: 100px;
+    margin-right: 100px;
+    margin-bottom: 15px;
+}
+.Title_Form p{
+    height: 50px;
+         font-family: "Poppins", sans-serif;
+     font-weight: 300;
+     font-size: 16px;
+}
+.ParentForm{
+
+    display: flex;
+    justify-content: end;
+    align-items: flex-start;
+}
+.Message{
+    border: 2px solid green;
+    background-color: whitesmoke;
+    width: 600px;
+    height: 500px;
+    margin-right: 100px;
+    border-radius: 40px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.Column{
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    gap: 5px;
+    padding-left: 45px;
+    padding-top: 45px;
+}
+.Column input{
+    width: 200px;
+    height: 30px;
+    border-radius: 20px;
+    padding: 5px;
+    padding-left: 10px;
+     font-family: "Poppins", sans-serif;
+     font-weight: 300;
+     font-size: 14px;
+}
+.Column label{
+    padding-left: 5px;
+
+    margin-bottom: 0;
+}
+.Name{
+    border: 3px solid green;
+}
+.Concern{
+
+    height: 230px;
+    margin-top: 15px;
+    padding-left: 40px;
+}
+.Concern textarea{
+    margin-top: 15px;
+    width: 90%;
+    height: 70%;
+      font-family: "Poppins", sans-serif;
+     font-weight: 300;
+     font-size: 14px;
+     padding: 10px;
+
+}
+.Butoon{
+    text-align: center;
+    height: 35px;
+}
+.Send{
+    height: 35px;
+    width: 70%;
+    border-radius: 40px;
+    background-color: green;
+    color: white;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+      font-family: "Poppins", sans-serif;
+     font-weight: 300;
+     font-size: 14px;
+
+}
+.Main_Container{
+    display: flex;
+    align-items: start;
+}
+.Left{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+
+    height: 800px;
+}
+.ImageFont{
+    height: 100vh;
+    width: 800px;
+    position: relative;
+    padding-bottom: 0;
+    
+}
+.Image_Back{
+    border: transparent;
+    height: 400px;
+    margin-top: -85vh;
+    background-image: url(Image-Logo/BG12.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.FooterMain {
+    background-color: #D0F0C0;
+    
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    padding-top: 15px;
+}
+
+.FooterMain h1, .FooterMain p {
+    text-align: center;
+    color: black;
+}
+.FooterMain h1{
+    font-family: "Reddit Mono", monospace;
+    font-weight: 0;
+}
+.FooterMain p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+}
+.sign-up {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.sign-up [type='text'], button {
+    margin-left: 20px;
+    margin-top: 5px;
+     font-family: "Poppins", sans-serif;
+    font-size: 14px;
+}
+
+.sign-up [type='text'] {
+    width: 500px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    padding-left: 10px;
+    outline: none;
+}
+
+.sign-up button {
+    border-radius: 30px;
+    padding: 7px;
+    width: 250px;
+    height: 40px;
+    border-color: transparent;
+    transition: .5s ease;
+    background-color: #40a829;
+    color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+}
+.sign-up button:hover{
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    background-color: green;
+    border: none;
+    outline: none;
+    color: white;
+}
+
+.Contents{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 5px;
+    height: 500px;
+    padding-left: 105px;
+    background-color: whitesmoke;
+}
+.Mission{
+    border-radius: 30px;
+    margin: 40px;
+    border: 3px solid green;
+    text-align: center;
+    height:375px;
+    width: 500px;
+   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.Mission h1{
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+.Mission p{
+    text-align: justify;
+    padding-left: 40px;
+    padding-right: 40px;
+    word-spacing: 5px;
+    line-height: 25px;
+         font-family: "Poppins", sans-serif;
+     font-weight: 300;
+     font-size: 16px;
+}
+.Description{
+    margin: 50px;
+    text-align: center;
+    height: 175px
+}
+.Description h1, .Description p {
+    margin:20px;
+}
+.Description p {
+    font-size: 18px;
+         font-family: "Poppins", sans-serif;
+     font-weight: 300;
+     
+}
+.Table_Doc {
+    margin-right: 100px;
+  margin-left: 100px;
+}
+
+.Doctors_container {
+
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin: 20px auto;       
+}
+
+
+.Table_Doc {
+    border-collapse: separate; 
+    border-spacing: 20px;     
+}
+
+
+.Doc_Cell {
+    border: 3px solid green;
+    border-radius: 40px;
+    padding: 10px;
+    width: 800px; 
+    vertical-align: middle; 
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.Doc_Container {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+}
+
+
+.Doc_Container img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px; 
+}
+
+
+.Doc_Info h3 {
+    margin: 0 0 5px 0;
+    font-size: 1.2em;
+}
+
+.Doc_Info p {
+    text-align: justify;
+    margin: 0;
+    font-size: 0.9em;
+    color: #555;
+    max-width: 300px; 
+         font-family: "Poppins", sans-serif;
+     font-weight: 300;
+     font-size: 16px;
+}
+.Informations{
+
+    height: 350px;  
+   
+
+}
+.Boxes{
+    margin-top: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    text-align: center;
+
+}
+.BoxesThree{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    gap: 10px;
+    padding-left: 410px;
+    padding-right: 510px;
+    
+}
+
+.Rates{
+    margin-top: 10px;
+    border: 3px solid green;
+    width: 220px;
+    height: 150px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    background-color: white;
+}
+.Rates h1, .Rates p {
+    text-align: start;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.Rates p{
+         font-family: "Poppins", sans-serif;
+     font-weight: 300;
+     font-size: 16px;
+}
+.Seperate {
+    padding-top: 20px;
+    background-color: whitesmoke;
+    border-bottom-right-radius: 50px;
+  
+    width: 400px;
+    text-align: center;
+    margin-left: 10px;
+   
+}
+.Seperate h2, .Seperate p {
+    text-align: start;
+    margin: 25px;
+}
+.Seperate p{
+         font-family: "Poppins", sans-serif;
+     font-weight: 300;
+     font-size: 16px;
+}
+.Secondboxes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+    padding-right: 350px;
+    padding-left: 100px;
+    padding-bottom: 70px;
+}
+.Free{
+
+    padding: 10px;
+    margin-left: 115px;
+}
+.Informations_Title{
+
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-left: 20px;
+}
+.Info_Titles h1, .Info_Titles p{
+    margin-left: 200px;
+    color: white;
+    text-align: start;
+    padding: 5px;
+}
+.Info_Titles p{
+         font-family: "Poppins", sans-serif;
+     font-weight: 300;
+     font-size: 16px;
+}
+.Button_Book{
+    width: 200px;
+    height: 40px;
+    border-radius: 50px;
+    border: 1px solid green;
+    margin-left: 200px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    transition: .3s ease-in-out;
+    background-color: transparent;
+    color: white;
+    background-color: #228b22;
+}
+.Button_Book:hover{
+    width: 200px;
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    margin-left: 200px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.Free_Info{
+    text-align: start;
+    color: white;
+    width: 550px;
+    margin-left: 700px;
+}
+.Content_Info{
+  
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+}
+.Information_Content h1{
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.Information_Content p{
+    width: 70%;
+    margin-left: 240px;
+    text-align: justify;
+    font-size: 18px;
+    word-spacing: 5px;
+    line-height: 30px;
+}

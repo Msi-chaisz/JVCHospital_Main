@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Reddit+Mono:wght@200..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <label>
+        <input type="checkbox">
+        <div class="toggle">
+            <span class="top-line common" ></span>
+            <span class="middle-line common" ></span>
+            <span class="bottom-line common" ></span>
+        </div>
+        <div class="slide">
+            <h2>MENU</h2>
+            <ul>
+            <li> <a href="Home.html" class="Slide_Ul"><i class="fa-solid fa-tachograph-digital"></i> Dashboard</a></li>
+                <li><a href="Patient_Home.html" class="Slide_Ul"><i class="fa-solid fa-file-prescription"></i> Prescription</a></li>
+                <li><a href="DoctorAppoint.html" class="Slide_Ul"><i class="fa-regular fa-calendar-days"></i> Appointment</a></li>
+                <li><a href="StaffsList.html" class="Slide_Ul"><i class="fa-solid fa-users-gear"></i> Staffs</a></li>
+                <li><a href="Products.html" class="Slide_Ul"><i class="fa-solid fa-capsules"></i> Products</a></li>
+                <li><a href="Inbox.html" class="Slide_Ul"><i class="fa-solid fa-inbox"></i> Inbox </a></li>
+    
+            </ul>
+            <ul>
+                 <li><a href="index.html" class="Log-out"><i class="fa-solid fa-arrow-right-from-bracket"></i> Log-out</a></li>
+            </ul>
+        </div>
+    </label>
+    <div class="Content_Outside">
+            <div class="Side_Image">
+                <img>
+            </div>
+        <div class="Upper">
+           
+            <div class="Inputs_Content">
+                <h1 id="AccountName">NAME</h1>
+                <p>Graduate Doctrine of Surgery</p>
+                <h5>You have 25 patients today.</h5>
+
+                <img src="Image-Logo/DocProf.png" width="220px" height="220px">
+            </div>
+            <div class="Box_Date">
+                <h4>Today</h4>
+                <h3>Monday, April 8, 2025</h3>
+            </div>
+            <div class="Note">
+                <i><h3>NOTEPAD:</h3></i>
+                <textarea placeholder="Place Notes" id="myText"></textarea>
+                <button type="submit" onclick="saveText()" class="Save">SAVE NOTE</button>
+            </div>
+            <div class="Patient_List">
+                <h2>Patients</h2>
+                <input class="search" style="display: flex;" placeholder="Search">
+                <button class="search_btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+
+                   <div class="history-container">
+                  
+                    <div class="history-card">
+                        <div class="card-header">
+                            <h3>April 1, 2026</h3>
+                            <span class="status pending">Ongoing</span>
+                        </div>
+
+                        <div class="card-body">
+                            <p><span style="font-weight: 600;">Doctor:</span> Dr. Chai Quinzon</p>
+                            <p><span style="font-weight: 600;">Patient Name:</span> Maria Santos</p>
+                            <p><span style="font-weight: 600;">Concern:</span> Mild fever, headache</p>
+                            <p><span style="font-weight: 600;">Last Check:</span> April 1, 2026 : 10: 00 AM</p>
+                        </div>
+
+                        <div class="card-footer">
+                            <button class="view-btn">View Details</button>
+                        </div>
+                    </div>
+
+                    <div class="history-card">
+                        <div class="card-header">
+                            <h3>April 1, 2026</h3>
+                            <span class="status pending">Pending</span>
+                        </div>
+
+                        <div class="card-body">
+                            <p><span style="font-weight: 600;">Doctor:</span> Dr. Chai Quinzon</p>
+                            <p><span style="font-weight: 600;">Patient Name:</span> Law Batman</p>
+                            <p><span style="font-weight: 600;">Concern:</span> Chest discomfort</p>
+                            <p><span style="font-weight: 600;">Last Check:</span> April 1, 2026: 12:00 AM</p>
+                        </div>
+
+                        <div class="card-footer">
+                            <button class="view-btn">View Details</button>
+                        </div>
+                    </div>
+
+                    <div class="history-card">
+                        <div class="card-header">
+                            <h3>March 10, 2026</h3>
+                            <span class="status completed" style="background-color: red;">Urgent</span>
+                        </div>
+
+                        <div class="card-body">
+                            <p><span style="font-weight: 600;">Doctor:</span> Dr. Anoj Acutio</p>
+                            <p><span style="font-weight: 600;">Patient Name:</span> John Cruz</p>
+                            <p><span style="font-weight: 600;">Concern:</span> Chest discomfort</p>
+                            <p><span style="font-weight: 600;">Last Check:</span> March 30, 2026, 2:30 PM</p>
+                        </div>
+
+                        <div class="card-footer">
+                            <button class="view-btn">View Details</button>
+                        </div>
+                    </div>
+
+                    
+                    <div class="history-card">
+                        <div class="card-header">
+                            <h3>March 10, 2026</h3>
+                            <span class="status completed">Completed</span>
+                        </div>
+
+                        <div class="card-body">
+                            <p><span style="font-weight: 600;">Doctor:</span> Dr. Ace Subz</p>
+                            <p><span style="font-weight: 600;">Patient Name:</span> Angela Reyes</p>
+                            <p><span style="font-weight: 600;">Concern:</span> Routine check-up</p>
+                            <p><span style="font-weight: 600;">Last Check:</span> March 28, 2026, 9:15 AM</p>
+                        </div>
+
+                        <div class="card-footer">
+                            <button class="view-btn">View Details</button>
+                        </div>
+                    </div>
+
+                    
+
+                    <div class="history-card">
+                        <div class="card-header">
+                            <h3>March 10, 2026</h3>
+                            <span class="status completed">Completed</span>
+                        </div>
+
+                        <div class="card-body">
+                            <p><span style="font-weight: 600;">Doctor:</span> Dr. Ace Subz</p>
+                            <p><span style="font-weight: 600;">Patient Name:</span> Law Batman</p>
+                            <p><span style="font-weight: 600;">Concern:</span> Fever, Headache, Fatigue</p>
+                            <p><span style="font-weight: 600;">Last Check:</span> March 10, 2026: 10:00 AM</p>
+                        </div>
+
+                        <div class="card-footer">
+                            <button class="view-btn">View Details</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            
+        </div>
+    </div>
+    <script >
+           
+        window.onload = function() {
+            const savedText = localStorage.getItem("userMessage");
+            if (savedText) {
+                document.getElementById("myText").value = savedText;
+            }
+        };
+
+        
+        function saveText() {
+            const text = document.getElementById("myText").value;
+            localStorage.setItem("userMessage", text);
+            alert("TEXT SAVED!");
+        }
+        
+
+        let username = localStorage.getItem("username");
+
+            if (username == "Admin") {
+                document.getElementById('AccountName').innerHTML = 
+                    `Doc.  ${username}`;
+            }
+
+            else if (username == "Batman") {
+                document.getElementById('AccountName').innerHTML = 
+                    `<i class="fa-solid fa-user-injured"></i>  ${username}`;
+            }
+    </script>
+</body>
+</html>

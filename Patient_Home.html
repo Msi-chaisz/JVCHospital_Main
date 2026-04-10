@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Patient</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Reddit+Mono:wght@200..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <label>
+        <input type="checkbox">
+        <div class="toggle">
+            <span class="top-line common" ></span>
+            <span class="middle-line common" ></span>
+            <span class="bottom-line common" ></span>
+        </div>
+        <div class="slide">
+            <h2>MENU</h2>
+            <ul>
+            <li> <a href="Home.html" class="Slide_Ul"><i class="fa-solid fa-tachograph-digital"></i> Dashboard</a></li>
+                <li><a href="Patient_Home.html" class="Slide_Ul"><i class="fa-solid fa-file-prescription"></i> Prescription</a></li>
+                <li><a href="DoctorAppoint.html" class="Slide_Ul"><i class="fa-regular fa-calendar-days"></i> Appointment</a></li>
+                <li><a href="StaffsList.html" class="Slide_Ul"><i class="fa-solid fa-users-gear"></i> Staffs</a></li>
+                <li><a href="Products.html" class="Slide_Ul"><i class="fa-solid fa-capsules"></i> Products</a></li>
+                <li><a href="Inbox.html" class="Slide_Ul"><i class="fa-solid fa-inbox"></i> Inbox</a></li>
+            </ul>
+            <ul>
+                 <li><a href="index.html" class="Log-out"><i class="fa-solid fa-arrow-right-from-bracket"></i> Log-out</a></li>
+            </ul>
+        </div>
+    </label>
+    <div class="Content_Outside">
+            <div class="Side_Image">
+                <img>
+            </div>
+        <div class="Upper">
+           <div class="PerscriptionBox">
+                <h2 style="margin: 20px; padding-left: 10px; text-align: center;">Prescription Form For Patient</h2>
+
+                <div class="Note_Ins">
+                    <h1>Patient Prescription Guidelines</h1>
+                    <p style="text-align: justify; margin-top: 10px;">All descriptions provided must be accurate and clearly reflect the patient’s actual condition, including symptoms, diagnosis, and prescribed medication. 
+                        Proper and precise information helps ensure that the patient receives the correct treatment and reduces the risk of medical errors or complications.</p>
+                    <p style="text-align: justify; margin-top: 20px;">
+                        All entries should be written clearly and completely, including dosage instructions and any special precautions. Inaccurate or incomplete details may lead to misunderstanding or 
+                        improper use of medication, which can affect the patient’s recovery and overall health.
+                    </p>
+                </div>
+
+                <form id="collegeForm" method="get" class="Form_Container">
+                    <table>
+                        <tr>
+                            <td title="First Name"><label for="fname">First-Name:</label></td>
+                            <td colspan="3"><input type="text" name="fname" id="fname" placeholder="First Name" required style="display: flex;"></td>
+                         
+                        </tr>
+                        <tr>
+                            <td title="Last Name"><label for="lname">Last-Name:</label></td>
+                            <td colspan="3"><input type="text" name="lname" id="lname" placeholder="Last Name" required style="display: flex;"></td>
+                        </tr>                
+
+                        <tr>
+                            <td title="House No."><label for="address">Patient Account ID:</label></td>
+                            <td colspan="3"><input type="text" name="address" id="address" required  style="display: flex;"></td>
+                        </tr>
+                            
+                        <tr>
+                            <td title="Year Level"><label for="year">Symptoms Level:</label></td>
+                            <td>
+                                <select name="year" id="year" required style="width: 100px;">
+                                    <option selected disabled hidden>Level</option>
+                                    <option value="1st">Low</option>
+                                    <option value="2nd">Mild</option>
+                                    <option value="3rd">High</option>
+                                </select>
+                            </td>
+
+                            <td title="Course"><label for="course">Symptoms:</label></td>
+                            <td>
+                                <select name="course" id="course" required>
+                                    <option selected disabled hidden>Symptoms</option>
+                                    <option value="LOW">Low-grade fever, mild fatigue, occasional headaches, runny nose, and light body aches</option>
+                                    <option value="MILD">Low-grade fever, sore throat, mild congestion, headaches, and light fatigue</option>
+                                    <option value="HIGH">Severe chest pain, acute shortness of breath, sudden severe headache, or confusion</option>
+                                    <option value="EMERGENCY">Difficulty breathing, uncontrolled bleeding, sudden confusion, facial drooping, or severe sudden pain</option>
+                                </select>
+                            </td>
+                        </tr>
+                    
+                        <tr>
+                            <td title="House No."><label for="address">Medication Name:</label></td>
+                            <td colspan="3"><input type="text" name="address" id="address" required  style="display: flex;"></td>
+                        </tr>
+
+                        <tr>
+                            <td title="Contact"><label for="contact">Dossage:</label></td>
+                            <td colspan="3"><input type="text" name="contact" id="contact" required style="display: flex;"></td>
+                        </tr>
+                        
+                        <tr>
+                            <td title="Contact"><label for="contact">Instruction:</label></td>
+                            <td colspan="3"><input type="text" name="contact" id="contact" required style="display: flex;"></td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="4" style="text-align: center; padding-top: 20px;">
+                                <div class="button-group">
+                                    <input type="submit" value="Submit Form" style="display: inline-flex;">
+                                    <input type="reset" value="Clear" style="display: inline-flex">
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+                
+
+           </div>
+        </div>
+    </div>
+    <script >
+           
+        window.onload = function() {
+            const savedText = localStorage.getItem("userMessage");
+            if (savedText) {
+                document.getElementById("myText").value = savedText;
+            }
+        };
+
+        
+        function saveText() {
+            const text = document.getElementById("myText").value;
+            localStorage.setItem("userMessage", text);
+            alert("TEXT SAVED!");
+        }
+        
+
+        let username = localStorage.getItem("username");
+
+            if (username == "Admin") {
+                document.getElementById('AccountName').innerHTML = 
+                    `Doc.  ${username}`;
+            }
+
+            else if (username == "Batman") {
+                document.getElementById('AccountName').innerHTML = 
+                    `<i class="fa-solid fa-user-injured"></i>  ${username}`;
+            }
+    </script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Free Consultation</title>
+     <link rel="stylesheet" href="NavBar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Reddit+Mono:wght@200..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="Covers">
+            <nav class="MainNav">
+            <div class="Logo">
+                <img src="Image-Logo/MainLogo.png" width="70px" height="70px">
+                 <h5><I> NEXUS CLINIC HOSPITAL</I></h5>
+            </div>
+            <div class="Content">
+                <ul>
+                    <li class="Select-Container">
+                        <Select id='services' style="background-color: transparent;">
+                            <div class="Dropdown">
+                            <option selected disabled hidden>Services</option>
+                            <option  value="Freeconsultation.html">Free Consultation</option>
+                            <option  value="Pediatric.html">Pediatric Consultation</option>
+                            <option  value="AdultCheck.html">Adult Health Check-up</option>
+                        </div>
+                        </Select>
+                    </li>
+                    <a href="Consultation.html"><li>How to Consult</li></a>
+                    <li class="Select-Container2">
+                        <select id='servicess' style="background-color: transparent;">
+                            <option selected disabled hidden>Medical Partner</option>
+                            <option  value="DoctorForm.html">Be a Partner-Doctor</option>
+                            <option  value="DoctorForm.html">Join Partner-Nurses</option>
+                            <option  value="Patient.html">Sign Up as Patient</option>
+                             <option  value="StaffsForm.html">Apply as Staff</option>
+                        </select>
+                    </li>
+                    <a href="Contact.html"><li >Contact Us</li></a>
+                    <a href="AboutUs.html"><li>About Us</li></a>
+                    <a href="More.html"><li>More</li></a>
+
+                </ul>
+            </div>
+
+           <script>
+                    document.getElementById("services").addEventListener("change", function() {window.location.href = this.value;});
+                    document.getElementById("servicess").addEventListener("change", function() {window.location.href = this.value;});
+            </script>
+
+            <div class="MiniLogi">
+                <ul>
+                    <a href="index.html"><i class="fa-brands fa-airbnb"></i></a>
+                    <a href="https://www.instagram.com/aldenrichards02/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="ReadMe.html"><i class="fa-regular fa-heart"></i></a>
+                    <a href="MainLog.html"><i class="fa-regular fa-circle-user"></i></a>
+                   
+                </ul>
+            </div>
+        </nav>
+
+        <div class="Information">
+           <div class="Free_Info">
+          
+                <h1 style="text-align: start;">Because Your Health Matters <br> — 
+                   Free Consultation   
+                </h1>
+                <p style="text-align: start; color: white;">Start your health journey with a free consultation from our experienced medical team.
+                     Receive personalized advice, proper guidance, and the support you need for your well-being.</p>
+           </div>
+        </div>
+    </div>
+
+    <div class="Content_Info">
+        <div class="Information_Content">
+            <h1> FULLY FREE DIGITAL CONSULTATION JOURNEY </h1>
+            <p >JVC NEXUS HOSPITAL provides a seamless end-to-end journey for patients– from booking a video consult or seeing a doctor 24/7 (with only 3 minutes of waiting time), 
+                paying for the consultation and even having their medicines delivered to their doorsteps.
+            </p><br>
+            <p >Free e-prescription, e-medical certificate and lab referral are loaded into the app after consultation. To empower users to keep track of their own personal health record. JVC NEXUS HOSPITAL was the first to provide a digital medical ID. Found on their JVC NEXUS HOSPiTAL APP. this allows patients to easily access their records stored in JVC NEXUS HOSPITAL secure  platform.
+            </p>
+        </div>
+    </div>
+
+     <div class="Services">
+        <div class="Secondboxes" style="margin-top: 20px; background-color: white;">
+            <div class="Seperate" >
+                <img src="Image-Logo/Free1.png" width="350px" height="275px" style="border-radius: 20px;">
+                <h2 >Consultations Available</h2>
+                <p style="text-align: justify;">As part of our commitment to accessible healthcare, we now provide free consultations for all patients. This service allows you to discuss your symptoms, ask questions, and receive professional advice to help you make informed decisions about your health.</p>
+            </div>
+
+            <div class="Seperate">
+                <img src="Image-Logo/Free2.png" width="350px" height="275px"  style="border-radius: 20px;">
+                <h2 >Community Care</h2>
+                <p  style="text-align: justify;">As part of our commitment to community well-being, we are providing complimentary consultations for all patients. This service is designed to offer guidance, reassurance, and professional medical insight to help you take the next step in your healthcare journey</p>
+            </div>
+
+            <div class="Seperate" >
+                <img src="Image-Logo/Free3.png" width="350px" height="275px" style="border-radius: 20px;">
+                <h2 >Expanded Access</h2>
+                <p tyle="text-align: justify;">We are enhancing our services by offering free medical consultations to better serve our community. This allows patients to receive professional advice, discuss their health concerns in detail, and explore appropriate care options—all without any consultation fees.</p>
+            </div>
+        </div>
+    </div>
+
+      <div class="FooterMain" >
+         <footer>
+            <h1>JOIN OUR NEXUS FAMILY AND STAY HEALTHY  </h1>
+            <p>Stay on track with daily check-ups, proper medication intake, and scheduled appointments</p>
+
+            <div class="sign-up">
+                <input type="text" placeholder="Enter your email address">
+                 <a href="Consultation.html"><button>SIGN ME UP!</button></a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

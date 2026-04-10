@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>About Us</title>
+    <link rel="stylesheet" href="NavBar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">  
+</head>
+<body>
+    <div class="Cover">
+            <nav class="MainNav">
+            <div class="Logo">
+                <img src="Image-Logo/MainLogo.png" width="70px" height="70px">
+                <h5> NEXUS CLINIC HOSPITAL</h5>
+            </div>
+            <div class="Content">
+                <ul>
+                    <li class="Select-Container">
+                        <Select id='services'>
+                            <div class="Dropdown">
+                            <option selected disabled hidden>Services</option>
+                            <option  value="Freeconsultation.html">Free Consultation</option>
+                            <option  value="Pediatric.html">Pediatric Consultation</option>
+                            <option  value="AdultCheck.html">Adult Health Check-up</option>
+                        </div>
+                        </Select>
+                    </li>
+                    <a href="Consultation.html"><li>How to Consult</li></a>
+                    <li class="Select-Container2">
+                        <select id='servicess'>
+                            <option selected disabled hidden>Medical Partner</option>
+                            <option  value="DoctorForm.html">Be a Partner-Doctor</option>
+                            <option  value="DoctorForm.html">Join Partner-Nurses</option>
+                            <option  value="Patient.html">Sign Up as Patient</option>
+                             <option  value="StaffsForm.html">Apply as Staff</option>
+                        </select>
+                    </li>
+                    <a href="Contact.html"><li >Contact Us</li></a>
+                    <a href="AboutUs.html"><li>About Us</li></a>
+                    <a href="More.html"><li>More</li></a>
+
+                </ul>
+            </div>
+
+           <script>
+                    document.getElementById("services").addEventListener("change", function() {window.location.href = this.value;});
+                    document.getElementById("servicess").addEventListener("change", function() {window.location.href = this.value;});
+            </script>
+
+            <div class="MiniLogi">
+                <ul>
+                    <a href="index.html"><i class="fa-brands fa-airbnb"></i></a>
+                    <a href="https://www.instagram.com/aldenrichards02/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="ReadMe.html"><i class="fa-regular fa-heart"></i></a>
+                    <a href="MainLog.html"><i class="fa-regular fa-circle-user"></i></a>
+                   
+                </ul>
+            </div>
+        </nav>
+
+        <div class="Information">
+           <div class="Free_Info">
+                <p style="color:white;"> ─── Welcome to JVC Nexus Hospital</p>
+                    <h2 style="text-align: justify;" >We deliver compassionate, affordable healthcare through innovation 
+                        and expertise — bringing quality care and hope to every patient.</h2>
+           </div>
+        </div>
+    
+    </div>
+
+
+    <div class="Content_Info">
+           
+        <div class="Information_Content">
+            <p style="text-align: center; margin-top: 50px;">──── Meet The Doctors</p>
+            <h1 style="margin-top: -5px;">Discover the Top 3 Medical Experts at JVC Hospital</h1><br>
+            <p>Life and Health Network is a non-profit organization dedicated to creating compelling, evidence-based life and health media.
+                 We believe we were designed to have the physical, emotional, and spiritual domains of our life in balance. Our goal is to 
+                 inspire and engage the global community to achieve that balance by living healthier and more abundant lives.
+            </p><br>
+            <p>For over 110 years, JVC Nexus Hospital has maintained the same vision: to advance pediatric care worldwide.
+                Our four-part mission is to:<BR>
+                - Provide the highest quality of healthcare<BR>
+                - Lead the way in research and discovery<BR>
+                - Educate the next generation of leaders in healthcare<BR>
+                - Enhance the health and well-being of the children and families in our local community.
+            </p>
+        </div>
+    </div>
+
+
+
+
+<div class="Doctors_container" style="margin-top: 200px;">
+
+    <table class="Table_Doc" style=" margin-left: 150px;">
+    <tr>
+        <!-- One doctor per <td> -->
+        <td class="Doc_Cell">
+        <div class="Doc_Container">
+            <img src="Image-Logo/Flower7.png" width="150" height="150" alt="Doc. Chai Quinzon">
+            <div class="Doc_Info">
+            <h3>Dr. Chai Quinzon</h3>
+            <p>Magna cum laude graduate focused on compassionate care.</p>
+            </div>
+        </div>
+        </td>
+        <td class="Doc_Cell">
+        <div class="Doc_Container">
+            <img src="Image-Logo/Flower9.png" width="150" height="150" alt="Doc. Ace Subz">
+            <div class="Doc_Info">
+            <h3>Dr. Ace Subz</h3>
+            <p>Magna cum laude graduate specializing in internal medicine.</p>
+            </div>
+        </div>
+        </td>
+        <td class="Doc_Cell">
+        <div class="Doc_Container">
+            <img src="Image-Logo/Flower8.png" width="150" height="150" alt="Doc. Anoj Acutio">
+            <div class="Doc_Info">
+            <h3>Dr. Anoj Acutio</h3>
+            <p>Magna cum laude graduate committed to patient well-being.</p>
+            </div>
+        </div>
+        </td>
+    </tr>
+    </table>
+
+</div>
+
+       
+    <div class="FooterMain">
+         <footer>
+            <h1>JOIN OUR NEXUS FAMILY AND STAY HEALTHY  </h1>
+            <p>Stay on track with daily check-ups, proper medication intake, and scheduled appointments</p>
+
+            <div class="sign-up">
+                <input type="text" placeholder="Enter your email address">
+                 <a href="Consultation.html"><button>SIGN ME UP!</button></a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

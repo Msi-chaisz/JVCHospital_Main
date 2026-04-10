@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Adult Check-Up</title>
+     <link rel="stylesheet" href="NavBar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Reddit+Mono:wght@200..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="Covers_Adult">
+            <nav class="MainNav">
+            <div class="Logo">
+                <img src="Image-Logo/MainLogo.png" width="70px" height="70px">
+                <h5> NEXUS CLINIC HOSPITAL</h5>
+            </div>
+            <div class="Content">
+                <ul>
+                    <li class="Select-Container">
+                        <Select id='services'>
+                            <div class="Dropdown">
+                            <option selected disabled hidden>Services</option>
+                            <option  value="Freeconsultation.html">Free Consultation</option>
+                            <option  value="Pediatric.html">Pediatric Consultation</option>
+                            <option  value="AdultCheck.html">Adult Health Check-up</option>
+                        </div>
+                        </Select>
+                    </li>
+                    <a href="Consultation.html"><li>How to Consult</li></a>
+                    <li class="Select-Container2">
+                        <select id='servicess'>
+                            <option selected disabled hidden>Medical Partner</option>
+                            <option  value="DoctorForm.html">Be a Partner-Doctor</option>
+                            <option  value="DoctorForm.html">Join Partner-Nurses</option>
+                            <option  value="Patient.html">Sign Up as Patient</option>
+                             <option  value="StaffsForm.html">Apply as Staff</option>
+                        </select>
+                    </li>
+                    <a href="Contact.html"><li >Contact Us</li></a>
+                    <a href="AboutUs.html"><li>About Us</li></a>
+                    <a href="More.html"><li>More</li></a>
+
+                </ul>
+            </div>
+
+           <script>
+                    document.getElementById("services").addEventListener("change", function() {window.location.href = this.value;});
+                    document.getElementById("servicess").addEventListener("change", function() {window.location.href = this.value;});
+            </script>
+
+            <div class="MiniLogi">
+                <ul>
+                    <a href="index.html"><i class="fa-brands fa-airbnb"></i></a>
+                    <a href="https://www.instagram.com/aldenrichards02/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="ReadMe.html"><i class="fa-regular fa-heart"></i></a>
+                    <a href="MainLog.html"><i class="fa-regular fa-circle-user"></i></a>
+                   
+                </ul>
+            </div>
+        </nav>
+
+        <div class="Information">
+           <div class="Free_Info">
+          
+                <h1 style="text-align: start;">Take Charge of Your Health<br>
+                        — Adult Check-Up Consultation
+                </h1>
+                <p style="text-align: start; color: white;">Start strong with a free consultation designed just for you. 
+                    Receive expert guidance, personalized recommendations, and caring support every step of the way.</p>
+           </div>
+        </div>
+    </div>
+
+    <div class="Content_Info">
+        <div class="Information_Content">
+            <h1> Your Adult Check-Up, Made Easy </h1>
+            <p>At JVC Nexus Hospital, you can enjoy a smooth and hassle-free consultation experience. Book a video consult or speak to a doctor anytime, 24/7, with minimal waiting time. From consultation to payment and even medicine delivery, everything is handled in one convenient platform.
+            </p><br>
+            <p>You’ll also receive free e-prescriptions, medical certificates, and lab referrals directly in the app—plus a secure digital medical ID to help you track and manage your health records
+            </p>
+        </div>
+    </div>
+
+     <div class="Services">
+        <div class="Secondboxes" style="margin-top: 20px; background-color: white;">
+            <div class="Seperate" >
+                <img src="Image-Logo/Adult1.png" width="350px" height="275px" style="border-radius: 20px;">
+                <h2 >Accessible Adult Healthcare</h2>
+                <p style="text-align: justify;">In line with our commitment to improving healthcare access, we provide free consultations for adult patients. This service enables individuals to receive professional evaluation, discuss medical concerns, and obtain appropriate guidance for ongoing care.</p>
+            </div>
+
+            <div class="Seperate">
+                <img src="Image-Logo/Adult2.png" width="350px" height="275px"  style="border-radius: 20px;">
+                <h2 >From Clinic to Digital Care</h2>
+                <p  style="text-align: justify;">Our adult consultation services have evolved to meet modern needs. Starting with in-person care and now fully digital, we continue our mission of delivering professional evaluation, reliable guidance, and seamless healthcare access for adults everywhere.</p>
+            </div>
+
+            <div class="Seperate" >
+                <img src="Image-Logo/Adult3.png" width="350px" height="275px" style="border-radius: 20px;">
+                <h2 >Decades of Adult Care</h2>
+                <p tyle="text-align: justify;">We have always believed in healthcare for everyone. Our adult consultation program started as a simple initiative to provide guidance and evaluation—and has grown into a trusted service that empowers the community to stay healthy</p>
+            </div>
+        </div>
+    </div>
+
+      <div class="FooterMain" >
+         <footer>
+            <h1>JOIN OUR NEXUS FAMILY AND STAY HEALTHY  </h1>
+            <p>Stay on track with daily check-ups, proper medication intake, and scheduled appointments</p>
+
+            <div class="sign-up">
+                <input type="text" placeholder="Enter your email address">
+                 <a href="Consultation.html"><button>SIGN ME UP!</button></a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

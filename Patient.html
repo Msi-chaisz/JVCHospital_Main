@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Patient Account</title>
+    <link rel="stylesheet" href="Registration.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Reddit+Mono:wght@200..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!--INDEX CLICK PROFILE, CHOOSE EITHER PATIENT OR DOCTOR THEN PROCEED TO LOG IN FORM. THEN OPEN MAIN SITE FOR HOSPITAL-->
+    <!--FOR PATIENT!-->
+
+   <div class="GrandContainer" id="GrandContainer">
+         <!--1ST FORM-BOX LOG IN-->
+        <div class="form-box login">
+            <form id="Patient_Form">
+                <h2>Log In</h2>
+             
+                <div class="input-box">
+                    <input type="text" placeholder="Username" required id="Pat_User">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="Password" required id="Pat_Pass">
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+                <button type="submit" class="btn">Log In</button>
+                <p>or log in with social media platforms</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://web.whatsapp.com/#"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://www.linkedin.com/login/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </form>
+        </div>
+
+         <!--2ND FORM-BOX SIGN UP-->
+        <div class="form-box register">
+            <form>
+                <h2 style="margin-top: 10px;">Create Account</h2>
+                <div class="input-box">
+                    <input type="text" placeholder="Full Name" required style="height: 40px; margin-bottom: -5px;">
+                </div>
+                <div class="input-box">
+                    <input type="email" placeholder="Enter Email" required>
+                    <i class="fa-regular fa-envelope"></i>
+                </div>
+                <div class="input-box">
+                    <input type="text" placeholder="Enter Username" required>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="Enter password" required>
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+                <button type="submit" class="btn">Sign Up</button>
+                <p>or log in with social media platforms</p>
+                <div class="social-icons">
+                   <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://web.whatsapp.com/#"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://www.linkedin.com/login/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </form>
+          
+
+        </div>
+
+          <!--FORM-BOX SIGN UP-->
+        <div class="Toggle-box">
+
+              <!--FORM-BOX SIGN UP-->
+            <div class="Toggle-panel toggle-left">
+                <h2 style="text-align: center;">WELCOME BACK!</h2>
+                <p style="text-align: center;">Please enter your credentials to access your patient account.<br> Don't have an account?</p>
+                <button class="btn btn_register">Register Now</button>
+            </div>
+
+            <!--FORM-BOX SIGN UP-->
+            <div class="Toggle-panel toggle-right">
+                <h2 style="text-align: center;">BEGIN YOUR CARE!</h2>
+                <p style="text-align: center;">Sign up to book appointments and track  healthcare needs.<br>Already have an account?</p>
+                <button class="btn btn_login">Log In</button>
+            </div>
+        </div>
+    
+   </div>
+    <script src="Patient.Js"></script>
+</body>
+</html>

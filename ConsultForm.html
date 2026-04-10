@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Patients Form</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Reddit+Mono:wght@200..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="Information">
+        <h1>CHECK-UP APPOINMENT</h1>
+         <p>Kindly fill out this form with the required information to create your account. 
+            The details you provide will serve as the basis for scheduling your hospital check-up 
+            and consultation appointments</p>
+        <p><b><i>Note:</b></i> The form will only be a basis for Re-scheduling Check-Up appointments. If you wish to create website account:
+            <a href="Patient.html" style="text-decoration: none; color: green;">Open New Account</a>
+        </p>
+        
+    </div>
+    <div class="form-container">
+        <div id="enrollment-form">
+            <h1>PATIENTS FORM</h1>
+           
+            <form id="collegeForm" action="" method="get">
+                <table>
+                    <tr>
+                        <td title="First Name"><label for="fname">First-Name:</label></td>
+                        <td colspan="3"><input type="text" name="fname" id="fname" placeholder="First Name" required></td>
+                    </tr>
+                    <tr>
+                        <td title="Last Name"><label for="lname">Last-Name:</label></td>
+                        <td colspan="3"><input type="text" name="lname" id="lname" placeholder="Last Name" required></td>
+                    </tr>                
+                    <tr>
+                        <td title="Birthday"><label for="bday">Birthday:</label></td>
+                        <td><input type="date" name="bday" id="bday" required></td>
+                       
+                        <td title="Birthplace"><label for="bplace">Birthplace:</label></td>
+                        <td><input type="text" name="bplace" id="bplace" placeholder="Birth Place" required></td>
+                    </tr>
+                    <tr>
+                        <td title="Age"><label for="age">Age:</label></td>
+                        <td><input type="text" name="age" id="age" placeholder="Age" required></td>
+                       
+                        <td title="Nationality"><label for="nationality">Nationality:</label></td>
+                        <td><input type="text" name="nationality" id="nationality" placeholder="Nationality" required></td>
+                    </tr>              
+                    <tr>
+                        <td title="Year Level"><label for="year">Symptoms Level:</label></td>
+                        <td>
+                            <select name="year" id="year" required>
+                                <option selected disabled hidden>Symptoms level</option>
+                                <option value="1st">Low</option>
+                                <option value="2nd">Mild</option>
+                                <option value="3rd">High</option>
+                            </select>
+                        </td>
+
+
+                        <td title="Course"><label for="course">Symptoms:</label></td>
+                        <td>
+                            <select name="course" id="course" required>
+                                <option selected disabled hidden>Symptoms</option>
+                                <option value="LOW">Low-grade fever, mild fatigue, occasional headaches, runny nose, and light body aches</option>
+                                <option value="MILD">Low-grade fever, sore throat, mild congestion, headaches, and light fatigue</option>
+                                <option value="HIGH">Severe chest pain, acute shortness of breath, sudden severe headache, or confusion</option>
+                                <option value="EMERGENCY">Difficulty breathing, uncontrolled bleeding, sudden confusion, facial drooping, or severe sudden pain</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td title="Sex"><label for="sex">Sex:</label></td>
+                        <td>
+                            <div class="radio-group">
+                                <input type="radio" name="sex" id="male" value="male" required> <label for="male" style="display:inline; font-weight:normal; margin-top: 10px;">Male</label>
+                                <input type="radio" name="sex" id="female" value="female" required> <label for="female" style="display:inline; font-weight:normal; margin-top: 10px;">Female</label>
+                            </div>
+                        </td>
+                        <td title="Civil Status"><label for="status">Civil-Status:</label></td>
+                        <td>
+                            <select name="status" id="status" required>
+                                <option selected disabled hidden>Civil-Status</option>
+                                <option value="single">Single</option>
+                                <option value="married">Married</option>
+                                <option value="private">Widowed</option>
+                                 <option value="Divorce">Divorce</option>
+                            </select>
+                        </td>
+                    </tr>
+
+
+                   
+                    <tr>
+                        <td title="Region"><label for="region">City:</label></td>
+                        <td><input type="text" name="region" id="region" placeholder="City" required></td>
+                       
+                        <td title="Province"><label for="province">Province:</label></td>
+                        <td><input type="text" name="province" id="province"  placeholder="Province" required></td>
+                    </tr>
+                    <tr>
+                        <td title="City"><label for="city">Barangay:</label></td>
+                        <td><input type="text" name="city" id="city" placeholder="Barangay" required></td>
+                       
+                        <td title="Barangay"><label for="barangay">Region:</label></td>
+                        <td><input type="text" name="barangay" id="barangay"  placeholder="Region" required></td>
+                    </tr>
+                    <tr>
+                        <td title="House No."><label for="address">House No. / Street:</label></td>
+                        <td colspan="3"><input type="text" name="address" id="address"  placeholder="House Number" required></td>
+                    </tr>
+
+
+                   
+                    <tr>
+                        <td title="Contact"><label for="contact">Contact No.:</label></td>
+                        <td colspan="3"><input type="text" name="contact" id="contact" placeholder="xxx-xxxx-xxx" required></td>
+                    </tr>
+                         
+                    <tr>
+                        <td colspan="4" style="text-align: center; padding-top: 20px;">
+                            <div class="button-group">
+                                <input type="submit" value="Submit Form">
+                                <input type="reset" value="Clear">
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+
+
+       
+        <div id="thank-you-page" class="thank-you-page">
+            <div class="check-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h1>Your Consultation Form Has Successfully Submitted!</h1>
+            <p>Thank you, <span id="student-name" style="font-weight:bold; color:#0a5700;"></span>!</p>
+            <p>Please wait for your scheduled appointment. We will send you a message or contact you through your provided phone number to inform you of your exact arrival time at JVC Nexus Hospital.
+            </p>
+           
+            <div class="button-group">
+                <button onclick="location.reload()" class="btn-print" style="background-color: #0f7e00; margin-left: 10px;">Submit Another Form</button>
+                <a href="index.html"><button class="btn-print" style="background-color: #0f7e00; margin-left: 10px;"><i class="fa-solid fa-house-chimney"></i></button></a>
+            </div>
+        </div>
+
+
+    </div>
+     <script>
+        document.getElementById('collegeForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const firstName = document.getElementById('fname').value;
+            const lastName = document.getElementById('lname').value;
+            document.getElementById('enrollment-form').style.display = 'none';
+            document.getElementById('student-name').textContent = firstName + " " + lastName;
+            document.getElementById('thank-you-page').style.display = 'block';
+        });
+    </script>
+
+
+   
+</body>
+</html>
+
